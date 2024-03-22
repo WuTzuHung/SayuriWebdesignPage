@@ -1,0 +1,278 @@
+body{
+    margin: 0;
+  background: url(https://pbs.twimg.com/media/FosGiivaYAAOqxC?format=jpg&name=large) no-repeat center center fixed;
+  background-size: cover;
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+  }
+}
+
+::-webkit-scrollbar {
+    display: none; 
+}
+
+
+
+    .header{
+        width: 100vw;
+        height: 695px;
+    //     // border: 1px solid black;
+        position: relative;
+        margin: 0;
+        justify-content: center;
+
+        .topback{
+            width: 100vw;
+            height: 695px;
+            position: absolute;
+            top: 0px;
+        }
+        
+        .top{
+            width: 100vw;
+            height: 130px;
+            position: sticky;
+            top: 0px;
+            z-index: 1000;
+            // border: 1px solid black;
+        }
+
+        .logo{
+            position: sticky;
+            top: 2%;
+            left: 0%;
+            margin-top: -165px;
+            z-index: 1001;
+        }
+
+        .logo2{
+            position: sticky;
+            top: 5%;
+            left: 85%;
+            margin-top: -170px;
+            z-index: 1002;
+        }
+
+        .logo3{
+            position: absolute;
+            top: 25%;
+            left: 25%;
+        }
+
+        .logo4{
+            position: absolute;
+            top: 45%;
+            left: 25%;
+        }
+    }
+
+    /* 定义淡入动画 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+    .second{
+        width: 100vw;
+        height: 105vh;
+        position: relative;
+        background-color: rgba(255, 192, 203, 0.5);
+        position: relative;
+
+        p{
+            position: absolute;
+            top: 250px;
+            left: 123px;
+            font-size: 34px;
+            opacity: 0; /* 初始时隐藏 */
+        }
+
+        h1{
+            position: absolute;
+            top: 100px;
+            left: 580px;
+            font-size: 60px;
+            opacity: 0; /* 初始时隐藏 */
+        }
+    }
+
+    .second:hover h1,
+    .second:hover p {
+    animation: fadeIn 2.5s forwards;
+}
+
+    .third{
+        width: 100vw;
+        height: 115vh;
+        position: relative;
+        background-color: rgba(255, 192, 203, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        .carousel-item img {
+            height: 600px; 
+            object-fit: cover; //填滿容器，保持寬高比
+        }
+
+        .sayu{
+            position: absolute;
+            width: 70%;
+            height: 300px;
+            top: 70px;
+            left: 250px;
+
+            .carousel-control-prev{
+                position: absolute;
+                left: -30px;
+                top: 350px; 
+            }
+
+            .carousel-control-next{
+
+                position: absolute;
+                left: 950px;
+                top: 350px; 
+            }
+        }
+
+        .carousel-indicators{
+                position: relative;
+                left: 0px;
+                top: 580px; 
+            
+        }
+
+        h5{
+            font-size: 70px;
+            // color: black;
+            font-weight: bold;
+        }
+
+
+    }
+
+    .fourth{
+        width: 100vw;
+        height: 120vh;
+        position: relative;
+        background-color: rgba(203, 115, 245, 0.5);
+
+
+        h1{
+            position: absolute;
+            top: 98px;
+            left: 620px;
+            font-size: 80px;
+        }
+
+        h2{
+            position: absolute;
+            top: 690px;
+            left: 95px;
+            font-size: 30px;
+        }
+
+        h3{
+            position: absolute;
+            top: 690px;
+            left: 530px;
+            font-size: 30px;
+        }
+
+        h4{
+            position: absolute;
+            top: 690px;
+            left: 920px;
+            font-size: 30px;
+        }
+
+        h5{
+            position: absolute;
+            top: 690px;
+            left: 1285px;
+            font-size: 30px;
+        }
+
+
+
+        .mikikoukai{
+            position: absolute;
+            top: 270px;
+            left: 80px;
+        }
+
+        .zukito{
+            position: absolute;
+            top: 270px;
+            left: 450px;
+        }
+
+        .heikou{
+            position: absolute;
+            top: 270px;
+            left: 820px;
+        }
+
+        .koukai{
+            position: absolute;
+            top: 270px;
+            left: 1200px;
+        }
+    }
+
+    // .fifth{
+    //     width: 100vw;
+    //     height: 920px;
+    //     position: relative;
+    //     background-color: rgba(203, 115, 245, 0.5);
+    // }
+
+    // .sixth{
+    //     width: 100vw;
+    //     height: 950px;
+    //     position: relative;
+    //     background-color: rgba(255, 192, 203, 0.5);
+    // }
+
+    .footer{
+        width: 100vw;
+        height: 150px;
+        position: relative;
+        background-color: #3E3E3E;
+
+        .logofooter{
+            position: absolute;
+            top: 19%;
+            left: 1%;
+        }
+
+        .twitter{
+            position: absolute;
+            top: 26%;
+            left: 25%; 
+        }
+
+        .ig{
+            position: absolute;
+            top: 26%;
+            left: 35%; 
+        }
+
+        .youtube{
+            position: absolute;
+            top: 26%;
+            left: 45%; 
+        }
+    }
