@@ -106,9 +106,17 @@ body{
         }
     }
 
-    .second:hover h1,
-    .second:hover p {
-    animation: fadeIn 2.5s forwards;
+/* 初始狀態下顯示文字 */
+.second p,
+.second h1 {
+    opacity: 0.3; /* 初始時隱藏 */
+    // animation: fadeIn 2.5s forwards;
+}
+
+.second:hover h1,
+.second:hover p {
+    opacity: 1;
+    animation: fadeIn 2s forwards;
 }
 
     .third{

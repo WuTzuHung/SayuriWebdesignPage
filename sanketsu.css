@@ -93,9 +93,16 @@ body .overlay {
   opacity: 0; /* 初始时隐藏 */
 }
 
+/* 初始狀態下顯示文字 */
+.second p,
+.second h1 {
+  opacity: 0.3; /* 初始時隱藏 */
+}
+
 .second:hover h1,
 .second:hover p {
-  animation: fadeIn 2.5s forwards;
+  opacity: 1;
+  animation: fadeIn 2s forwards;
 }
 
 .third {
