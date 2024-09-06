@@ -60,6 +60,7 @@ body{
             position: absolute;
             top: 30dvh;
             left: 25%;
+            // margin-top: 15dvh;
         }
 
         // .logo4{
@@ -74,71 +75,115 @@ body{
     .second{
         width: 100%;
         height: 105dvh;
-        position: relative;
         background-color: rgba(255, 192, 203, 0.5);
-        position: relative;
-
-        p{
-            position: absolute;
-            top: 250px;
-            left: 123px;
-            font-size: 34px;
-        }
+        padding: 1px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
         h1{
-            position: absolute;
-            top: 100px;
-            left: 580px;
-            font-size: 60px;
+            font-size: 5rem;
+            margin-bottom: 5dvh;
         }
-    }
 
+        p{
+            font-size: 1.9rem;
+            margin-top: 10dvh;
+        }
+
+        
+    }
 
     .third{
         width: 100%;
+        height: 120dvh;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(203, 115, 245, 0.5);
+        padding: 0.1px;
+        // justify-content: center;
+        align-items: center;
+
+        h2{
+            font-size: 5rem;
+            margin-top: 15dvh;
+            margin-bottom: 15dvh;
+        }
+
+        .thirdOne{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        h3{
+            margin-top: 3.5dvh;
+        }
+        
+
+        .thirdImg{
+            text-align: center;
+            
+            .responsive-img {
+                width: 100%;
+                height: auto;
+                object-fit: cover; /* 保持比例裁剪 */
+                border-radius: 5%;
+                max-width: 70%; /* 你可以調整最大寬度，讓圖片大小保持一致 */
+                max-height: 90dvh; /* 調整最大高度 */
+                aspect-ratio: 6 / 9; /* 設定一個固定的寬高比例，如 16:9 */
+              }
+        }
+
+
+    }
+
+
+    }
+
+
+
+    .fourth{
+        width: 100%;
         height: 115dvh;
-        position: relative;
+        // position: relative;
         background-color: rgba(255, 192, 203, 0.5);
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 1px;
 
 
         .carousel-item img {
-            height: 600px; 
+            height: 100dvh; 
             object-fit: cover; //填滿容器，保持寬高比
         }
 
         .sayu{
-            position: absolute;
+            // position: absolute;
             width: 70%;
-            height: 300px;
-            top: 70px;
-            left: 250px;
+            height: 100dvh;
+           
 
             .carousel-control-prev{
-                position: absolute;
-                left: -30px;
-                top: 350px; 
+                
             }
 
             .carousel-control-next{
 
-                position: absolute;
-                left: 950px;
-                top: 350px; 
+                
             }
         }
 
-        .carousel-indicators{
-                position: relative;
-                left: 0px;
-                top: 580px; 
+        .carousel-indicators button{
+            width: 30%;
+            margin-left: 3%;
+            margin-right: 3%;
             
         }
 
-        h5{
-            font-size: 70px;
+        h3{
+            font-size: 2rem;
             // color: black;
             font-weight: bold;
         }
@@ -146,74 +191,6 @@ body{
 
     }
 
-    .fourth{
-        width: 100%;
-        height: 120dvh;
-        position: relative;
-        background-color: rgba(203, 115, 245, 0.5);
-
-
-        h1{
-            position: absolute;
-            top: 98px;
-            left: 620px;
-            font-size: 80px;
-        }
-
-        h2{
-            position: absolute;
-            top: 690px;
-            left: 95px;
-            font-size: 30px;
-        }
-
-        h3{
-            position: absolute;
-            top: 690px;
-            left: 530px;
-            font-size: 30px;
-        }
-
-        h4{
-            position: absolute;
-            top: 690px;
-            left: 920px;
-            font-size: 30px;
-        }
-
-        h5{
-            position: absolute;
-            top: 690px;
-            left: 1285px;
-            font-size: 30px;
-        }
-
-
-
-        .mikikoukai{
-            position: absolute;
-            top: 270px;
-            left: 80px;
-        }
-
-        .zukito{
-            position: absolute;
-            top: 270px;
-            left: 450px;
-        }
-
-        .heikou{
-            position: absolute;
-            top: 270px;
-            left: 820px;
-        }
-
-        .koukai{
-            position: absolute;
-            top: 270px;
-            left: 1200px;
-        }
-    }
 
     // .fifth{
     //     width: 100vw;
@@ -236,26 +213,37 @@ body{
         background-color: #3E3E3E;
 
         .logofooter{
-            position: absolute;
-            top: 19%;
-            left: 1%;
+            width: 18%;
+            margin-left: 1%;
+            margin-top: 4.5dvh;
+            
         }
 
         .twitter{
-            position: absolute;
-            top: 26%;
-            left: 25%; 
+            width: 4.5%;
+            height: 10dvh;
+             border-radius: 10px;
+            margin-left: 10%;
+            margin-top: 5dvh;
+
         }
 
         .ig{
-            position: absolute;
-            top: 26%;
-            left: 35%; 
+            width: 4.5%;
+            height: 10dvh;
+            border-radius: 10px;
+            margin-left: 4%;
+            margin-top: 5dvh;
+            
         }
 
         .youtube{
-            position: absolute;
-            top: 26%;
-            left: 45%; 
-        }
+            width: 4.5%;
+            height: 10dvh;
+            border-radius: 10px;
+            margin-left: 4%;
+            margin-top: 5dvh;
+            
     }
+
+}

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
   background: url(https://pbs.twimg.com/media/FosGiivaYAAOqxC?format=jpg&name=large) no-repeat center center fixed;
@@ -56,119 +57,84 @@ body .overlay {
 .second {
   width: 100%;
   height: 105dvh;
-  position: relative;
   background-color: rgba(255, 192, 203, 0.5);
-  position: relative;
-}
-.second p {
-  position: absolute;
-  top: 250px;
-  left: 123px;
-  font-size: 34px;
+  padding: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .second h1 {
-  position: absolute;
-  top: 100px;
-  left: 580px;
-  font-size: 60px;
+  font-size: 5rem;
+  margin-bottom: 5dvh;
+}
+.second p {
+  font-size: 1.9rem;
+  margin-top: 10dvh;
 }
 
 .third {
   width: 100%;
-  height: 115dvh;
-  position: relative;
-  background-color: rgba(255, 192, 203, 0.5);
+  height: 120dvh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(203, 115, 245, 0.5);
+  padding: 0.1px;
+  align-items: center;
+}
+.third h2 {
+  font-size: 5rem;
+  margin-top: 15dvh;
+  margin-bottom: 15dvh;
+}
+.third .thirdOne {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.third .carousel-item img {
-  height: 600px;
+.third .thirdOne h3 {
+  margin-top: 3.5dvh;
+}
+.third .thirdOne .thirdImg {
+  text-align: center;
+}
+.third .thirdOne .thirdImg .responsive-img {
+  width: 100%;
+  height: auto;
   -o-object-fit: cover;
-     object-fit: cover;
-}
-.third .sayu {
-  position: absolute;
-  width: 70%;
-  height: 300px;
-  top: 70px;
-  left: 250px;
-}
-.third .sayu .carousel-control-prev {
-  position: absolute;
-  left: -30px;
-  top: 350px;
-}
-.third .sayu .carousel-control-next {
-  position: absolute;
-  left: 950px;
-  top: 350px;
-}
-.third .carousel-indicators {
-  position: relative;
-  left: 0px;
-  top: 580px;
-}
-.third h5 {
-  font-size: 70px;
-  font-weight: bold;
+     object-fit: cover; /* 保持比例裁剪 */
+  border-radius: 5%;
+  max-width: 70%; /* 你可以調整最大寬度，讓圖片大小保持一致 */
+  max-height: 90dvh; /* 調整最大高度 */
+  aspect-ratio: 6/9; /* 設定一個固定的寬高比例，如 16:9 */
 }
 
 .fourth {
   width: 100%;
-  height: 120dvh;
-  position: relative;
-  background-color: rgba(203, 115, 245, 0.5);
+  height: 115dvh;
+  background-color: rgba(255, 192, 203, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1px;
 }
-.fourth h1 {
-  position: absolute;
-  top: 98px;
-  left: 620px;
-  font-size: 80px;
+.fourth .carousel-item img {
+  height: 100dvh;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-.fourth h2 {
-  position: absolute;
-  top: 690px;
-  left: 95px;
-  font-size: 30px;
+.fourth .sayu {
+  width: 70%;
+  height: 100dvh;
+}
+.fourth .carousel-indicators button {
+  width: 30%;
+  margin-left: 3%;
+  margin-right: 3%;
 }
 .fourth h3 {
-  position: absolute;
-  top: 690px;
-  left: 530px;
-  font-size: 30px;
-}
-.fourth h4 {
-  position: absolute;
-  top: 690px;
-  left: 920px;
-  font-size: 30px;
-}
-.fourth h5 {
-  position: absolute;
-  top: 690px;
-  left: 1285px;
-  font-size: 30px;
-}
-.fourth .mikikoukai {
-  position: absolute;
-  top: 270px;
-  left: 80px;
-}
-.fourth .zukito {
-  position: absolute;
-  top: 270px;
-  left: 450px;
-}
-.fourth .heikou {
-  position: absolute;
-  top: 270px;
-  left: 820px;
-}
-.fourth .koukai {
-  position: absolute;
-  top: 270px;
-  left: 1200px;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .footer {
@@ -178,22 +144,28 @@ body .overlay {
   background-color: #3E3E3E;
 }
 .footer .logofooter {
-  position: absolute;
-  top: 19%;
-  left: 1%;
+  width: 18%;
+  margin-left: 1%;
+  margin-top: 4.5dvh;
 }
 .footer .twitter {
-  position: absolute;
-  top: 26%;
-  left: 25%;
+  width: 4.5%;
+  height: 10dvh;
+  border-radius: 10px;
+  margin-left: 10%;
+  margin-top: 5dvh;
 }
 .footer .ig {
-  position: absolute;
-  top: 26%;
-  left: 35%;
+  width: 4.5%;
+  height: 10dvh;
+  border-radius: 10px;
+  margin-left: 4%;
+  margin-top: 5dvh;
 }
 .footer .youtube {
-  position: absolute;
-  top: 26%;
-  left: 45%;
+  width: 4.5%;
+  height: 10dvh;
+  border-radius: 10px;
+  margin-left: 4%;
+  margin-top: 5dvh;
 }/*# sourceMappingURL=sanketsu.css.map */
