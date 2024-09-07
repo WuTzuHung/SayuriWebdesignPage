@@ -193,14 +193,15 @@ body {
     width: 65%;
   }
   .second {
-    height: 40dvh;
+    height: 50dvh;
   }
   .second h1 {
     font-size: 2rem;
+    margin-top: 1dvh;
     margin-bottom: 2dvh;
   }
   .second p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     margin-top: 3dvh;
   }
   .third {
@@ -242,7 +243,7 @@ body {
   }
   .footer {
     width: 100%;
-    height: 15dvh;
+    height: 10dvh;
     position: relative;
     background-color: #3E3E3E;
   }
@@ -250,7 +251,7 @@ body {
     width: 15%;
     height: 5dvh;
     margin-left: 1%;
-    margin-top: 1dvh;
+    margin-top: 3dvh;
     margin-bottom: 0dvh;
   }
   .footer .twitter {
@@ -258,7 +259,7 @@ body {
     height: 5dvh;
     border-radius: 10px;
     margin-left: 10%;
-    margin-top: 1dvh;
+    margin-top: 2dvh;
     margin-bottom: 0dvh;
   }
   .footer .ig {
@@ -266,7 +267,7 @@ body {
     height: 5dvh;
     border-radius: 10px;
     margin-left: 5%;
-    margin-top: 1dvh;
+    margin-top: 2dvh;
     margin-bottom: 0dvh;
   }
   .footer .youtube {
@@ -274,7 +275,7 @@ body {
     height: 5dvh;
     border-radius: 10px;
     margin-left: 5%;
-    margin-top: 1dvh;
+    margin-top: 2dvh;
     margin-bottom: 0dvh;
   }
 }/*# sourceMappingURL=sanketsu.css.map */
