@@ -138,6 +138,9 @@ body {
   position: relative;
   background-color: #3E3E3E;
 }
+.footer a {
+  text-decoration: none;
+}
 .footer .logofooter {
   width: 18%;
   margin-left: 1%;

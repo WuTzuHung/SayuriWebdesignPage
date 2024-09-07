@@ -207,10 +207,17 @@ body{
         position: relative;
         background-color: #3E3E3E;
 
+        a{
+            text-decoration: none;
+        }
+
         .logofooter{
             width: 18%;
             margin-left: 1%;
             margin-top: 4.5dvh;
+
+            
+            
             
         }
 
@@ -389,6 +396,7 @@ body{
             margin-left: 1%;
             margin-top: 3dvh;
             margin-bottom: 0dvh;
+
             
         }
 
