@@ -2,15 +2,6 @@ body{
     margin: 0;
   background: url(https://pbs.twimg.com/media/FosGiivaYAAOqxC?format=jpg&name=large) no-repeat center center fixed;
   background-size: cover;
-
-  .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; 
-  }
 }
 
 ::-webkit-scrollbar {
@@ -70,6 +61,10 @@ body{
         //     width: 70%;
         // }
     }
+
+    .second br {
+        display: none; 
+      }
 
 
     .second{
@@ -162,7 +157,7 @@ body{
         .sayu{
             // position: absolute;
             width: 70%;
-            height: 100dvh;
+            // height: 100dvh;
            
 
             .carousel-control-prev{
@@ -247,3 +242,194 @@ body{
     }
 
 }
+
+@media (max-width: 576px) { 
+
+    .header{
+        height: 30dvh;
+
+
+        .topback{
+            height: 30dvh;
+            top: 0px;
+        }
+        
+        .top{
+            height: 5.7dvh;
+            top: 0dvh;
+        }
+
+        .logo{
+            top: 1dvh;
+            left: 0%;
+            width: 25%;
+        }
+
+        .logo2{
+            top: 1dvh;
+            left: 74%;
+            width: 25%;
+
+        }
+
+        .logo3{
+            top: 10dvh;
+            left: 19%;
+            width: 65%;
+        }
+
+        // .logo4{
+        //     position: absolute;
+        //     top: 25%;
+        //     left: 15%;
+        //     width: 70%;
+        // }
+    }
+
+    .second{
+        height: 40dvh;
+        
+
+        h1{
+            font-size: 2rem;
+            margin-bottom: 2dvh;
+        }
+
+        p{
+            font-size: 0.9rem;
+            margin-top: 3dvh;
+        }
+
+        
+    }
+
+    .third{
+        height: 140dvh;
+
+        h2{
+            font-size: 2rem;
+            margin-top: 5dvh;
+            margin-bottom: 8dvh;
+        }
+
+        .thirdOne{
+            display: flex;
+            flex-direction: column;
+
+        h3{
+            font-size: 1rem;
+            margin-top: 1.5dvh;
+            margin-bottom: 5dvh;
+        }
+        
+
+        .thirdImg{
+            
+            .responsive-img {
+                max-height: 30dvh; /* 調整最大高度 */
+              }
+        }
+
+
+    }
+
+
+    }
+
+
+    .fourth{
+        height: 50dvh;
+
+
+        .carousel-item img {
+            height: 30dvh; 
+        }
+
+        .sayu{
+            width: 95%;
+           
+
+            .carousel-control-prev{
+                
+            }
+
+            .carousel-control-next{
+
+                
+            }
+
+            
+        }
+
+        .carousel-indicators button{
+            width: 20%;
+            
+        }
+
+        h3{
+            width: 5%;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+
+    }
+
+
+    .footer{
+        width: 100%;
+        height: 15dvh;
+        position: relative;
+        background-color: #3E3E3E;
+
+        .logofooter{
+            width: 15%;
+            height: 5dvh;
+            margin-left: 1%;
+            margin-top: 1dvh;
+            margin-bottom: 0dvh;
+            
+        }
+
+        .twitter{
+            width: 10%;
+
+
+            height: 5dvh;
+            border-radius: 10px;
+            margin-left: 10%;
+            margin-top: 1dvh;
+            margin-bottom: 0dvh;
+
+        }
+
+        .ig{
+            width: 10%;
+
+
+            height: 5dvh;
+            border-radius: 10px;
+            margin-left: 5%;
+            margin-top: 1dvh;
+            margin-bottom: 0dvh;
+
+            
+        }
+
+        .youtube{
+            width: 10%;
+
+
+            height: 5dvh;
+            border-radius: 10px;
+            margin-left: 5%;
+            margin-top: 1dvh;
+            margin-bottom: 0dvh;
+
+            
+    }
+
+}
+
+
+ }
