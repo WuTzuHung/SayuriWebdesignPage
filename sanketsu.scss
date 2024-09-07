@@ -440,5 +440,14 @@ body{
 
 }
 
+#console {
+    font-family: monospace;
+    background: #eee;
+    padding: 10px;
+    border: 1px solid #ccc;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
 
  }
