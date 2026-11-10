@@ -1,11 +1,22 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body{
     margin: 0;
-  background: url(https://pbs.twimg.com/media/FosGiivaYAAOqxC?format=jpg&name=large) no-repeat center center fixed;
-  background-size: cover;
+    overflow-x: hidden;
+    background: url(https://pbs.twimg.com/media/FosGiivaYAAOqxC?format=jpg&name=large) no-repeat center center fixed;
+    background-size: cover;
+}
+
+img{
+    max-width: 100%;
 }
 
 ::-webkit-scrollbar {
-    display: none; 
+    display: none;
 }
 
 
@@ -13,120 +24,124 @@ body{
     .header{
         width: 100%;
         height: 100dvh;
-    //     // border: 1px solid black;
         position: relative;
         margin: 0;
-        // justify-content: center;
+        overflow: hidden;
 
         .topback{
             width: 100%;
-            height: 100dvh;
+            height: 100%;
             position: absolute;
-            top: 0px;
+            top: 0;
+            left: 0;
+            object-fit: cover; // 不變形，填滿畫面
         }
-        
+
         .top{
             width: 100%;
             height: 19dvh;
             position: fixed;
-            top: 0dvh;
+            top: 0;
+            left: 0;
+            object-fit: cover;
             z-index: 1000;
         }
 
         .logo{
             position: fixed;
             top: 1dvh;
-            left: 0%;
+            left: 1%;
+            width: clamp(120px, 22vw, 360px);
+            height: auto;
             z-index: 1001;
         }
 
         .logo2{
             position: fixed;
-            top: 5dvh;
-            left: 85%;
+            top: 4dvh;
+            right: 1%;
+            width: clamp(100px, 14vw, 230px);
+            height: auto;
             z-index: 1002;
         }
 
         .logo3{
             position: absolute;
-            top: 30dvh;
-            left: 25%;
-            // margin-top: 15dvh;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: min(60vw, 900px);
+            height: auto;
         }
-
-        // .logo4{
-        //     position: absolute;
-        //     top: 25%;
-        //     left: 15%;
-        //     width: 70%;
-        // }
     }
 
     .second br {
-        display: none; 
-      }
+        display: none;
+    }
 
 
     .second{
         width: 100%;
-        height: 105dvh;
+        min-height: 100dvh;
         background-color: rgba(255, 192, 203, 0.5);
-        padding: 1px;
+        padding: 10dvh 5%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
 
         h1{
-            font-size: 5rem;
+            font-size: clamp(2rem, 5vw, 5rem);
             margin-bottom: 5dvh;
         }
 
         p{
-            font-size: 1.9rem;
-            margin-top: 10dvh;
+            font-size: clamp(0.9rem, 1.8vw, 1.9rem);
+            max-width: 1400px;
+            margin-top: 5dvh;
         }
 
-        
+
     }
 
     .third{
         width: 100%;
-        height: 120dvh;
+        min-height: 100dvh;
         display: flex;
         flex-direction: column;
         background-color: rgba(203, 115, 245, 0.5);
-        padding: 0.1px;
-        // justify-content: center;
+        padding: 12dvh 3% 15dvh;
         align-items: center;
 
         h2{
-            font-size: 5rem;
-            margin-top: 15dvh;
-            margin-bottom: 15dvh;
+            font-size: clamp(2rem, 5vw, 5rem);
+            margin-bottom: 10dvh;
         }
 
         .thirdOne{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            width: 100%;
+            max-width: 1600px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem 1rem;
+            justify-items: center;
 
         h3{
-            margin-top: 3.5dvh;
+            font-size: clamp(1rem, 1.6vw, 1.75rem);
+            margin-top: 3dvh;
         }
-        
+
 
         .thirdImg{
+            width: 100%;
             text-align: center;
-            
+
             .responsive-img {
-                width: 100%;
+                width: 70%;
                 height: auto;
-                object-fit: cover; /* 保持比例裁剪 */
+                aspect-ratio: 2 / 3; // 統一圖片比例
+                object-fit: cover; // 保持比例裁剪
                 border-radius: 5%;
-                max-width: 70%; /* 你可以調整最大寬度，讓圖片大小保持一致 */
-                max-height: 90dvh; /* 調整最大高度 */
-                aspect-ratio: 6 / 9; /* 設定一個固定的寬高比例，如 16:9 */
               }
         }
 
@@ -140,201 +155,182 @@ body{
 
     .fourth{
         width: 100%;
-        height: 115dvh;
-        // position: relative;
+        min-height: 100dvh;
         background-color: rgba(255, 192, 203, 0.5);
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 1px;
+        padding: 8dvh 0;
 
 
         .carousel-item img {
-            height: 100dvh; 
+            width: 100%;
+            height: auto;
+            aspect-ratio: 4 / 3;
+            max-height: 85dvh;
             object-fit: cover; //填滿容器，保持寬高比
         }
 
         .sayu{
-            // position: absolute;
             width: 70%;
-            // height: 100dvh;
-           
-
-            .carousel-control-prev{
-                
-            }
-
-            .carousel-control-next{
-
-                
-            }
+            max-width: 1300px;
         }
 
         .carousel-indicators button{
             width: 30%;
             margin-left: 3%;
             margin-right: 3%;
-            
+
         }
 
         h3{
-            font-size: 2rem;
-            // color: black;
+            font-size: clamp(1.25rem, 2vw, 2rem);
             font-weight: bold;
         }
 
 
     }
 
-
-    // .fifth{
-    //     width: 100vw;
-    //     height: 920px;
-    //     position: relative;
-    //     background-color: rgba(203, 115, 245, 0.5);
-    // }
-
-    // .sixth{
-    //     width: 100vw;
-    //     height: 950px;
-    //     position: relative;
-    //     background-color: rgba(255, 192, 203, 0.5);
-    // }
-
     .footer{
         width: 100%;
-        height: 22dvh;
         position: relative;
         background-color: #3E3E3E;
+        padding: 4dvh 1%;
+        display: flex;
+        align-items: center;
+        gap: clamp(1rem, 4vw, 4rem);
 
         a{
             text-decoration: none;
+            display: block;
         }
 
         .logofooter{
-            width: 18%;
-            margin-left: 1%;
-            margin-top: 4.5dvh;
-
-            
-            
-            
+            width: clamp(110px, 18%, 340px);
+            height: auto;
+            margin-right: 6%;
         }
 
-        .twitter{
-            width: 4.5%;
-            height: 10dvh;
-             border-radius: 10px;
-            margin-left: 10%;
-            margin-top: 5dvh;
-
-        }
-
-        .ig{
-            width: 4.5%;
-            height: 10dvh;
-            border-radius: 10px;
-            margin-left: 4%;
-            margin-top: 5dvh;
-            
-        }
-
+        .twitter,
+        .ig,
         .youtube{
-            width: 4.5%;
-            height: 10dvh;
+            display: block;
+            width: clamp(36px, 4.5vw, 80px);
+            height: auto;
+            aspect-ratio: 1 / 1; // 正方形，不變形
+            object-fit: contain;
             border-radius: 10px;
-            margin-left: 4%;
-            margin-top: 5dvh;
-            
-    }
+        }
 
 }
 
-@media (max-width: 576px) { 
+// 平板
+@media (max-width: 991px) {
+
+    .header{
+        height: 60dvh;
+
+        .top{
+            height: 10dvh;
+        }
+
+        .logo3{
+            width: 70vw;
+        }
+    }
+
+    .second{
+        min-height: auto;
+        padding: 8dvh 6%;
+    }
+
+    .third{
+        min-height: auto;
+        padding: 8dvh 4% 10dvh;
+
+        h2{
+            margin-bottom: 6dvh;
+        }
+
+        .thirdOne{
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2.5rem 1rem;
+
+            .thirdImg .responsive-img{
+                width: 60%;
+            }
+        }
+    }
+
+    .fourth{
+        min-height: auto;
+        padding: 8dvh 0;
+
+        .sayu{
+            width: 85%;
+        }
+    }
+}
+
+// 手機
+@media (max-width: 576px) {
 
     .header{
         height: 30dvh;
 
-
-        .topback{
-            height: 30dvh;
-            top: 0px;
-        }
-        
         .top{
             height: 5.7dvh;
-            top: 0dvh;
         }
 
         .logo{
             top: 1dvh;
-            left: 0%;
             width: 25%;
         }
 
         .logo2{
             top: 1dvh;
-            left: 74%;
-            width: 25%;
-
+            width: 22%;
         }
 
         .logo3{
-            top: 10dvh;
-            left: 19%;
             width: 65%;
         }
-
-        // .logo4{
-        //     position: absolute;
-        //     top: 25%;
-        //     left: 15%;
-        //     width: 70%;
-        // }
     }
 
     .second{
-        height: 50dvh;
-        
+        padding: 6dvh 5%;
 
         h1{
-            font-size: 2rem;
-            margin-top: 1dvh;
             margin-bottom: 2dvh;
         }
 
         p{
-            font-size: 0.8rem;
-            margin-top: 3dvh;
+            margin-top: 2dvh;
         }
-
-        
     }
 
     .third{
-        height: 140dvh;
+        padding: 5dvh 4% 6dvh;
 
         h2{
-            font-size: 2rem;
-            margin-top: 5dvh;
-            margin-bottom: 8dvh;
+            margin-bottom: 5dvh;
         }
 
         .thirdOne{
-            display: flex;
-            flex-direction: column;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
 
         h3{
-            font-size: 1rem;
             margin-top: 1.5dvh;
-            margin-bottom: 5dvh;
         }
-        
+
 
         .thirdImg{
-            
+
             .responsive-img {
-                max-height: 30dvh; /* 調整最大高度 */
+                width: auto;
+                height: 30dvh;
+                max-width: 70%;
               }
         }
 
@@ -346,108 +342,38 @@ body{
 
 
     .fourth{
-        height: 50dvh;
-
+        padding: 6dvh 0;
 
         .carousel-item img {
-            height: 30dvh; 
+            aspect-ratio: 16 / 10;
+            max-height: 40dvh;
         }
 
         .sayu{
             width: 95%;
-           
-
-            .carousel-control-prev{
-                
-            }
-
-            .carousel-control-next{
-
-                
-            }
-
-            
         }
 
         .carousel-indicators button{
             width: 20%;
-            
         }
-
-        h3{
-            width: 5%;
-            font-size: 1rem;
-            font-weight: bold;
-        }
-
-
     }
 
 
     .footer{
-        width: 100%;
-        height: 10dvh;
-        position: relative;
-        background-color: #3E3E3E;
+        padding: 2dvh 3%;
+        gap: 5%;
 
         .logofooter{
-            width: 15%;
-            height: 5dvh;
-            margin-left: 1%;
-            margin-top: 3dvh;
-            margin-bottom: 0dvh;
-
-            
+            width: 22%;
+            margin-right: 5%;
         }
 
-        .twitter{
-            width: 10%;
-
-
-            height: 5dvh;
-            border-radius: 10px;
-            margin-left: 10%;
-            margin-top: 2dvh;
-            margin-bottom: 0dvh;
-
-        }
-
-        .ig{
-            width: 10%;
-
-
-            height: 5dvh;
-            border-radius: 10px;
-            margin-left: 5%;
-            margin-top: 2dvh;
-            margin-bottom: 0dvh;
-
-            
-        }
-
+        .twitter,
+        .ig,
         .youtube{
-            width: 10%;
-
-
-            height: 5dvh;
-            border-radius: 10px;
-            margin-left: 5%;
-            margin-top: 2dvh;
-            margin-bottom: 0dvh;
-
-            
-    }
+            width: 40px;
+        }
 
 }
-
-// #console {
-//     font-family: monospace;
-//     background: #eee;
-//     padding: 10px;
-//     border: 1px solid #ccc;
-//     max-height: 200px;
-//     overflow-y: auto;
-// }
-
 
  }
